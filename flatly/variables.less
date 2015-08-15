@@ -42,7 +42,8 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//@font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -359,7 +360,7 @@
 // Basics of a navbar
 @navbar-height:                    60px;
 @navbar-margin-bottom:             @line-height-computed;
-@navbar-border-radius:             @border-radius-base;
+@navbar-border-radius:             0px;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
@@ -460,7 +461,7 @@
 @pagination-active-border:             transparent;
 
 @pagination-disabled-color:            @gray-lighter;
-@pagination-disabled-bg:               lighten(@brand-success, 15%);
+@pagination-disabled-bg:               lighten(@brand-success, 33%);
 @pagination-disabled-border:           transparent;
 
 
@@ -496,19 +497,19 @@
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-@state-success-text:             #fff;
+@state-success-text:             @brand-success;
 @state-success-bg:               @brand-success;
 @state-success-border:           @brand-success;
 
-@state-info-text:                #fff;
+@state-info-text:                @brand-info;
 @state-info-bg:                  @brand-info;
 @state-info-border:              @brand-info;
 
-@state-warning-text:             #fff;
+@state-warning-text:             @brand-warning;
 @state-warning-bg:               @brand-warning;
 @state-warning-border:           @brand-warning;
 
-@state-danger-text:              #fff;
+@state-danger-text:              @brand-danger;
 @state-danger-bg:                @brand-danger;
 @state-danger-border:            @brand-danger;
 
@@ -720,19 +721,19 @@
 @panel-primary-border:        @brand-primary;
 @panel-primary-heading-bg:    @brand-primary;
 
-@panel-success-text:          @state-success-text;
+@panel-success-text:          #fff;
 @panel-success-border:        @state-success-border;
 @panel-success-heading-bg:    @state-success-bg;
 
-@panel-info-text:             @state-info-text;
+@panel-info-text:             #fff;
 @panel-info-border:           @state-info-border;
 @panel-info-heading-bg:       @state-info-bg;
 
-@panel-warning-text:          @state-warning-text;
+@panel-warning-text:          #fff;
 @panel-warning-border:        @state-warning-border;
 @panel-warning-heading-bg:    @state-warning-bg;
 
-@panel-danger-text:           @state-danger-text;
+@panel-danger-text:           #fff;
 @panel-danger-border:         @state-danger-border;
 @panel-danger-heading-bg:     @state-danger-bg;
 
