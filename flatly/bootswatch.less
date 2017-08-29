@@ -63,7 +63,7 @@
 #btn(info,@btn-info-bg);
 #btn(warning,@btn-warning-bg);
 #btn(danger,@btn-danger-bg);
-#btn(link,#fff);
+/*#btn(link,#fff);*/
 
 .btn {
   border: none;
@@ -73,12 +73,13 @@
   &-link {
     border-radius: @btn-border-radius-base;
     .box-shadow(none);
-    color: @btn-default-color;
+    /*color: @btn-default-color;*/
 
     &:hover,
     &:focus {
       .box-shadow(none);
       color: @btn-default-color;
+      background-color: @btn-default-bg;
       text-decoration: none;
     }
   }
@@ -150,7 +151,7 @@ label {
 
 
 .form-control,
-input, {
+input {
   border-width: 2px;
   .box-shadow(none);
 
@@ -439,7 +440,7 @@ input[type="checkbox"],
 }
 
 .badge {
-  padding: 3px 6px 5px;
+  padding: 4px 6px 4px;
 }
 
 .progress {
@@ -512,6 +513,24 @@ input[type="checkbox"],
 
   &-item-text {
     color: @gray-light;
+  }
+}
+
+a.list-group-item-success, button.list-group-item-success {
+  color: #fff;
+  &:hover,
+  &:active:hover,
+  &:focus:hover, {
+    color: #fff;
+  }
+
+  a {
+    color: #fff;
+    &:hover,
+    &:active:hover,
+    &:focus:hover, {
+      color: #fff;
+    }  
   }
 }
 

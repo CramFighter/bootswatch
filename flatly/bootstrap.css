@@ -6966,29 +6966,7 @@ button.close {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
-.btn-link {
-  -webkit-background-size: 200% 200%;
-          background-size: 200%;
-  background-position: 50%;
-}
-.btn-link:focus {
-  background-color: #ffffff;
-}
-.btn-link:hover,
-.btn-link:active:hover {
-  background-color: #f0f0f0;
-}
-.btn-link:active {
-  background-color: #e0e0e0;
-  background-image: -webkit-radial-gradient(circle, #e0e0e0 10%, #ffffff 11%);
-  background-image: -o-radial-gradient(circle, #e0e0e0 10%, #ffffff 11%);
-  background-image: radial-gradient(circle, #e0e0e0 10%, #ffffff 11%);
-  background-repeat: no-repeat;
-  -webkit-background-size: 1000% 1000%;
-          background-size: 1000%;
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
+/*#btn(link,#fff);*/
 .btn {
   border: none;
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
@@ -7001,13 +6979,14 @@ button.close {
   border-radius: 4px;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #ffffff;
+  /*color: @btn-default-color;*/
 }
 .btn-link:hover,
 .btn-link:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #ffffff;
+  background-color: #95a5a6;
   text-decoration: none;
 }
 .btn-default.disabled {
@@ -7348,7 +7327,7 @@ input[type="checkbox"]:disabled:checked:after,
   color: #fff;
 }
 .badge {
-  padding: 3px 6px 5px;
+  padding: 4px 6px 4px;
 }
 .progress {
   position: relative;
@@ -7405,6 +7384,30 @@ input[type="checkbox"]:disabled:checked:after,
 }
 .list-group-item-text {
   color: #b4bcc2;
+}
+a.list-group-item-success,
+button.list-group-item-success {
+  color: #fff;
+}
+a.list-group-item-success:hover,
+button.list-group-item-success:hover,
+a.list-group-item-success:active:hover,
+button.list-group-item-success:active:hover,
+a.list-group-item-success:focus:hover,
+button.list-group-item-success:focus:hover {
+  color: #fff;
+}
+a.list-group-item-success a,
+button.list-group-item-success a {
+  color: #fff;
+}
+a.list-group-item-success a:hover,
+button.list-group-item-success a:hover,
+a.list-group-item-success a:active:hover,
+button.list-group-item-success a:active:hover,
+a.list-group-item-success a:focus:hover,
+button.list-group-item-success a:focus:hover {
+  color: #fff;
 }
 .well {
   border-radius: 0;
