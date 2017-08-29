@@ -1,8 +1,9 @@
-// Simplex 3.3.5
+// Simplex 3.3.7
 // Bootswatch
 // -----------------------------------------------------
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+$web-font-path: "https://fonts.googleapis.com/css?family=Open+Sans:400,700" !default;
+@import url($web-font-path);
 
 @mixin btn-shadow($color){
   @include gradient-vertical-three-colors(lighten($color, 3%), $color, 6%, darken($color, 3%));
@@ -29,33 +30,27 @@
   font-family: $headings-font-family;
 }
 
-.btn-default,
-.btn-default:hover {
+.btn-default {
   @include btn-shadow($btn-default-bg);
 }
 
-.btn-primary,
-.btn-primary:hover {
+.btn-primary {
   @include btn-shadow($btn-primary-bg);
 }
 
-.btn-success,
-.btn-success:hover {
+.btn-success {
   @include btn-shadow($btn-success-bg);
 }
 
-.btn-info,
-.btn-info:hover {
+.btn-info {
   @include btn-shadow($btn-info-bg);
 }
 
-.btn-warning,
-.btn-warning:hover {
+.btn-warning {
   @include btn-shadow($btn-warning-bg);
 }
 
-.btn-danger,
-.btn-danger:hover {
+.btn-danger {
   @include btn-shadow($btn-danger-bg);
 }
 
