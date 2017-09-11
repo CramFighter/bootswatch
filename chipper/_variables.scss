@@ -1,5 +1,5 @@
 $bootstrap-sass-asset-helper: false !default;
-// Paper 3.3.7
+// Chipper 0.0.1 (From Paper 3.3.7)
 // Variables
 // --------------------------------------------------
 
@@ -10,12 +10,12 @@ $bootstrap-sass-asset-helper: false !default;
 
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              #212121 !default;
+$gray-dark:              #767272 !default;
 $gray:                   #666 !default;
 $gray-light:             #bbb !default;
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #2196F3 !default;
+$brand-primary:         #BD10E0 !default;
 $brand-success:         #4CAF50 !default;
 $brand-info:            #9C27B0 !default;
 $brand-warning:         #ff9800 !default;
@@ -27,9 +27,9 @@ $brand-danger:          #e51c23 !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               #FFFAFA !default;
 //** Global text color on `<body>`.
-$text-color:            $gray !default;
+$text-color:            $gray-dark !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -43,13 +43,13 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       "Raleway", Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          13px !default;
+$font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -61,16 +61,15 @@ $font-size-h5:            20px !default;
 $font-size-h6:            14px !default;
 
 //** Unit-less `line-height` for use in components like buttons.
-$line-height-base:        1.846 !default; // 20/14
+$line-height-base:        1.5 !default; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
-$headings-font-weight:    400 !default;
+$headings-font-family:    $font-family-serif !default;
+//$headings-font-weight:    800 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          #444 !default;
-
 
 //== Iconography
 //
@@ -146,7 +145,7 @@ $table-border-color:            #ddd !default;
 $btn-font-weight:                normal !default;
 
 $btn-default-color:              #444 !default;
-$btn-default-bg:                 #fff !default;
+$btn-default-bg:                 transparent !default;
 $btn-default-border:             transparent !default;
 
 $btn-primary-color:              #fff !default;
@@ -370,16 +369,16 @@ $navbar-default-bg:                #fff !default;
 $navbar-default-border:            transparent !default;
 
 // Navbar links
-$navbar-default-link-color:                $gray !default;
+$navbar-default-link-color:                $brand-primary !default;
 $navbar-default-link-hover-color:          $gray-dark !default;
 $navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         $gray-dark !default;
-$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-active-color:         #fff !default;
+$navbar-default-link-active-bg:            $brand-primary;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
-$navbar-default-brand-color:               $navbar-default-link-color !default;
+$navbar-default-brand-color:               $brand-primary;
 $navbar-default-brand-hover-color:         $navbar-default-link-hover-color !default;
 $navbar-default-brand-hover-bg:            transparent !default;
 
@@ -388,7 +387,6 @@ $navbar-default-toggle-hover-bg:           transparent !default;
 $navbar-default-toggle-icon-bar-bg:        rgba(0,0,0,0.5) !default;
 $navbar-default-toggle-border-color:       transparent !default;
 
-
 //=== Inverted navbar
 // Reset inverted navbar basics
 $navbar-inverse-color:                      $gray-light !default;
@@ -396,7 +394,7 @@ $navbar-inverse-bg:                         $brand-primary !default;
 $navbar-inverse-border:                     transparent !default;
 
 // Inverted navbar links
-$navbar-inverse-link-color:                 lighten($brand-primary, 30%) !default;
+$navbar-inverse-link-color:                 $gray-lighter;
 $navbar-inverse-link-hover-color:           #fff !default;
 $navbar-inverse-link-hover-bg:              transparent !default;
 $navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
@@ -414,6 +412,7 @@ $navbar-inverse-toggle-hover-bg:            transparent !default;
 $navbar-inverse-toggle-icon-bar-bg:         rgba(0,0,0,0.5) !default;
 $navbar-inverse-toggle-border-color:        transparent !default;
 
+.navbar-inverse .navbar-nav > li > a        {font-weight:bold;}
 
 //== Navs
 //

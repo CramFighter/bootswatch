@@ -22,7 +22,7 @@ module.exports = function (grunt) {
             ' * Based on Bootstrap\n' +
             '*/\n',
     swatch: {
-      amelia:{}, cerulean:{}, cosmo:{}, cyborg:{}, darkly:{},
+      amelia:{}, chipper: {}, cerulean:{}, cosmo:{}, cyborg:{}, darkly:{},
       flatly:{}, journal:{}, lumen:{}, paper:{}, readable:{},
       sandstone:{}, simplex:{}, slate:{}, solar:{}, spacelab:{},
       superhero:{}, united:{}, yeti:{}, custom:{}
@@ -60,7 +60,7 @@ module.exports = function (grunt) {
       }
     },
     watch: {
-      files: ['*/variables.less', '*/bootswatch.less', '*/index.html'],
+      files: ['*/variables.less', '*/bootswatch.less', '*/_variables.scss', '*/_bootswatch.scss', '*/index.html'],
       tasks: 'build',
       options: {
         livereload: true,
