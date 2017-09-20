@@ -646,6 +646,17 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
 	font-weight: 400;
 }
 
+.alert h1, .alert h2, .alert h3, .alert h4, .alert h5, .alert h6 {
+	color: white;
+	margin-bottom: 0;
+} 
+
+.vcenter {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
 .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle, .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open>.btn-default.dropdown-toggle:hover, .open>.btn-default.dropdown-toggle:focus, .open>.btn-default.dropdown-toggle.focus {
 	color: #fff;
 	background-color: $gray-dark;
@@ -664,10 +675,10 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
 
 .panel-default > .panel-heading {
 	font-family: "Raleway";
-    font-weight: 900;
-    color: #bd10e0;
-    font-size: 18px;
-    background-color: transparent;
+	font-weight: 900;
+	color: #bd10e0;
+	font-size: 18px;
+	background-color: transparent;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -676,5 +687,11 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
 
 .panel-body  {
 	padding-top: 0;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+	background-color: #f4cffc;
+	color: #555;
+	border: 1px solid #ddd;
 }
 
