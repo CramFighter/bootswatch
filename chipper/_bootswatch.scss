@@ -177,7 +177,7 @@ a {
 // Forms ======================================================================
 
 label {
-  font-weight: normal;
+  font-weight: 700;
 }
 
 textarea,
@@ -685,13 +685,12 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
 	color: $gray-dark; font-weight:bold;
 }
 
-.panel-body  {
-	padding-top: 0;
-}
-
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
 	background-color: #f4cffc;
 	color: #555;
 	border: 1px solid #ddd;
 }
 
+.table {
+  margin-bottom: 0;
+}
