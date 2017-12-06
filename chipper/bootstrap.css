@@ -8378,3 +8378,8 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
 .table {
   margin-bottom: 0;
 }
+
+.btn-default .badge {
+  background-color: #BBB;
+  color: #FFF;
+}
